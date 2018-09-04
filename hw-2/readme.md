@@ -15,5 +15,5 @@ I did run into a few issues so I contacted Stephanie and she told me that she co
  I did not help any classmates with issues this week because
  - I did not see any issues posted to the GitHub forum
  - I don't know anyone personally from this class that could have asked me for help.
- ## **Insterting Photos*
+ ## **Inserting Photos**
  ![Image of my editor](image-of-my-editor.png)
