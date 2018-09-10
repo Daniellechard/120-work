@@ -11,5 +11,5 @@ function setup() {
 //Declaring draw() function
 function draw(){
   //Use text function to write "Hello World!" with p5
-  text( "Hello World!", 110, 150 )
+  text( "Hello World!", 110, 150 );
 }
