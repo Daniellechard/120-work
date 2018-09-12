@@ -1,5 +1,6 @@
-# Empty p5 sketch.
+Danielle Chard, 50
 
-Please replace contents of this file with appropriate readme information after finishing your p5 sketch.
+["Hello World"](https://daniellechard.github.io/120-work/hw-3/empty-example/)
 
-Current p5 version -> 0.7.1
+# **HW-3 Response**
+I had fun this week as we finally got a chance to play around in p5 and start messing around with some more creative type stuff, even though it was very basic, just colors, text, and placement. I did however run into an issue with viewing my personal github webpage, even though I believe I followed every video step by step. In order to try and remedy the problem I posted an issue to the github "Issues" forum. After that I went back a did a little problem solving to try and figure out why it wasn't finding the repository folder even though I knew eveything else was working properly. I went to look at my repositories on the github website and I noticed that my folder was labeled *hw-3/empty-example*. I thought maybe that was why it wasn't showing up on the webpage so instead of just adding *hw-3/* I added *hw-3/empty-example* to the end of the url and it ended up working. Then I went back and answered my own issue on the github site so that if anyone else ran into the same problem then maybe that would help them. I would like to learn more about different ways to color the background because I would like to have a less limited color pallet to work with. I tried playing with colors like *light green* and *mauve* but I always just ended up with a blank white webpage which was slighty dissapointing. However, I am excited to dive into that topic and learn more about how to code and play with different colors. I'll be even more excited when we eventually get to experiment with movement through code.
