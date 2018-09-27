@@ -63,6 +63,13 @@ strokeWeight(10);
 //creating stem
 line(0, 500, 0, flow_pos_y);
 
+//leaves
+//specifying leaf color
+//noStroke();
+fill('rgb(41, 142, 73)')
+rect(0, flow_pos_y + 100, 25, 20, 120, 0, 100, 130);
+rect(-25, flow_pos_y + 65, 25, 20, 0, 100, 130, 100);
+
 //flower petals
 //defining color layer 1
 push();
@@ -85,12 +92,7 @@ ellipse(0, 0, 20, 20);
 fill('rgb(83, 0, 163)');
 ellipse(0, 0, 10, 10);
 pop();
-//leaves
-//specifying leaf color
-//noStroke();
-fill('rgb(41, 142, 73)')
-rect(0, flow_pos_y + 100, 25, 20, 120, 0, 100, 130);
-rect(-25, flow_pos_y + 65, 25, 20, 0, 100, 130, 100);
+
 
 
 
