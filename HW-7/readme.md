@@ -1,6 +1,6 @@
 Danielle Chard 50
 
-[Live Sketch Link](Your Live Link)
+[Moving Ellipse Sketch](Your Live Link)
 
 
 # HW 7 | Describe then Alter the Bouncing Ball
