@@ -37,7 +37,7 @@ if (mouseIsPressed){
   if (mouseButton === RIGHT)  {
   strokeWeight(3);
 } else {
- strokeWeight(0)
+ strokeWeight(0);
 }
 }
   //changed code to pink, yellow, white, and orange tones using the random and fill function together
