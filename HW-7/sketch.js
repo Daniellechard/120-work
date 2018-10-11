@@ -18,6 +18,7 @@ function setup() {
 
 function draw() {
 
+
     ball.x += ball.delta_x * ball.scale_x;
     ball.y += ball.delta_y * ball.scale_y;
 
@@ -28,6 +29,9 @@ function draw() {
     if (ball.y >= height || ball.y <= 0) {
         ball.delta_y = -1 * ball.delta_y;
     }
+//added text instructions
+    text('press any key to reset', 550, 50);
+    text('click left or right mouse buttons to change stroke weight', 800, 50)
  //added reset option
   if (keyIsPressed === true) {
      background(255);
@@ -44,6 +48,8 @@ if (mouseIsPressed){
     fill( 255, random(255), random(255), random(255));
     ellipse(ball.x, ball.y, ball.width, ball.width);
 }
+
+
 
 function mousePressed() {
     ball.scale_x = map(mouseX, 0, width, 0.5, 10);
