@@ -7,13 +7,13 @@ Danielle Chard 50
 
 ## Description of What the Original Code is Doing
 
-..*Lines 3-10 define all of the variables needed for this Code
-..*Lines 12-15 set up the canvas
-..*Line 19 begins draw function
-..*Lines 21-22 create movement for the ellipse's x and y variables
-..*Lines 25-30 keeps the ellipse within the confines of the canvas
-..*Lines 31-46 are my changes to the code
-..*Lines 48-50 determine the speed of the ellips, clicking in the upper left slows it down while clicking towards the right speeds it up
+*Lines 3-10 define all of the variables needed for this Code
+*Lines 12-15 set up the canvas
+*Line 19 begins draw function
+*Lines 21-22 create movement for the ellipse's x and y variables
+*Lines 25-30 keeps the ellipse within the confines of the canvas
+*Lines 31-46 are my changes to the code
+*Lines 48-50 determine the speed of the ellips, clicking in the upper left slows it down while clicking towards the right speeds it up
 
 ## How did you alter the sketch?
 I started altering the sketch by first changing the color of the ellipse to something a little more fun by using the random color function.
