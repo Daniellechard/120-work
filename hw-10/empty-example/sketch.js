@@ -27,9 +27,9 @@ frameRate(1);
 function draw(){
 background(color.r, color.b, color.g);
 //adding random background color
-color.r = random(100, 255);
-color.b = random(200, 255);
-color.g = random(0, 255);
+color.r = random(100, 200);
+color.b = random(100, 255);
+color.g = random(200, 255);
 //adding random word positions for x and y
 pos.x = random(200, 1000);
 pos.y = random(200, 600);
