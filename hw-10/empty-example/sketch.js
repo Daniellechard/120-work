@@ -34,6 +34,12 @@ color.g = random(200, 255);
 pos.x = random(200, 1000);
 pos.y = random(200, 600);
 
+//add text instructions
+fill(0);
+textSize(20);
+text('press mouse to read through poem', 600, 700);
+
+
 //creating text
 fill(0);
 textSize(100);
