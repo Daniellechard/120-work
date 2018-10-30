@@ -9,7 +9,7 @@ var pos = {
   x: 600,
   y: 600
 };
-//
+//creating color variable
 var color = {
   r: 0,
   b: 255,
@@ -21,8 +21,7 @@ function setup() {
 //slowing frame rate
 frameRate(1);
   }
-
-
+  
 //setting up draw and background
 function draw(){
 background(color.r, color.b, color.g);
@@ -30,15 +29,14 @@ background(color.r, color.b, color.g);
 color.r = random(100, 200);
 color.b = random(100, 255);
 color.g = random(200, 255);
-//adding random word positions for x and y
-pos.x = random(200, 1000);
-pos.y = random(200, 600);
+
+//using function created
+ranXandY();
 
 //add text instructions
 fill(0);
 textSize(20);
 text('press mouse to read through poem', 600, 700);
-
 
 //creating text
 fill(0);
@@ -49,7 +47,19 @@ text(words[index], pos.x, pos.y);}
 function mousePressed() {
   index = index + 1;
 
-if (index == 23){
-  index=0;
+//using function created
+resetWords();
+
 }
+//creating random x and y position function
+function ranXandY(){
+  //adding random word positions for x and y
+  pos.x = random(200, 1000);
+  pos.y = random(200, 600);
+}
+//creating function to reset words
+function resetWords(){
+  if (index == 23){
+    index=0;
+  }
 }
