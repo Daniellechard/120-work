@@ -4,14 +4,14 @@ let pieces = 75;
 function setup() {
   createCanvas(windowWidth, windowHeight);
 
-for (let i= 0; i < pieces; i++) {
+for (let i= 0; i < 75; i++) {
   glitter.push (new Confetti());
  }
 }
 
 function draw(){
   background(255);
-  frameRate(50);
+  frameRate(30);
 
   for ( i = 0; i < glitter.length; i++){
     let beginX= random(0, windowWidth);
@@ -23,7 +23,7 @@ function draw(){
 class Confetti{
 
 constructor(){
-  this.glitterColor= '( random(255), random(255), random(255) )';
+  //this.glitterColor= '( random(255), random(255), random(255))';
   this.x = random (0, windowWidth);
   this.y = random (windowHeight, 0);
   this.widthSize = 10;
@@ -56,7 +56,8 @@ repeat(){
 
 //display
 display(){
-  fill(this.glitterColor);
+  noStroke();
+  fill( random(255), random(255), random(255));
   ellipse(this.x, this.y, this.widthSize, this.heightSize);
 }
 
