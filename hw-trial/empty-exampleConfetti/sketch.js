@@ -61,11 +61,5 @@ display(){
   ellipse(this.x, this.y, this.widthSize, this.heightSize);
 }
 
-//melt effect that didnt take
-    melt(){
-     if (this.y > height){
-        this.y = this.melt_y;
-        this.x = this.melt_x;
-      }
-    }
+
 }
