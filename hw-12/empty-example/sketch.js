@@ -12,11 +12,17 @@ for (let i= 0; i < 75; i++) {
 function draw(){
   background(255);
   frameRate(30);
-
-  for ( i = 0; i < glitter.length; i++){
+//interaction
+  for ( var i = 0; i < glitter.length; i++){
     let beginX= random(0, windowWidth);
     let beginY= random(windowHeight, 0);
     glitter[i].frame(beginX, beginY);
+  for (var j = 0; j < glitter.length; j++)  {
+    if (i != j && glitter[i].intersects(glitter[j])){
+      glitter[i].fill(0);
+      glitter[j].fill(0);
+    }
+  }
   }
 }
 
@@ -60,4 +66,5 @@ display(){
   fill( random(255), random(255), random(255));
   ellipse(this.x, this.y, this.widthSize, this.heightSize);
 }
+
 }
