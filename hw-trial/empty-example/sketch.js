@@ -1,70 +1,106 @@
-let glitter = [];
-let pieces = 75;
 
+//declare variables
+let balls = [];
+const numOfBalls = 45;
+//set up canvas
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+    createCanvas(windowWidth, 800);
 
-for (let i= 0; i < pieces; i++) {
-  glitter.push (new Confetti());
- }
-}
-
-function draw(){
-  background(255);
-  frameRate(50);
-
-  for ( i = 0; i < glitter.length; i++){
-    let beginX= random(0, windowWidth);
-    let beginY= random(windowHeight, 0);
-    glitter[i].frame(beginX, beginY);
-  }
-}
-
-class Confetti{
-
-constructor(){
-  this.glitterColor= '( random(255), random(255), random(255) )';
-  this.x = random (0, windowWidth);
-  this.y = random (windowHeight, 0);
-  this.widthSize = 10;
-  this.heightSize = 10;
-
-}
-
-frame(){
-  this.glitter();
-  this.repeat();
-  this.display();
-
-}
-
-//movement
-glitter(){
-  this.x -= 0.1;
-  this.y += random (1, 5);
-}
-
-repeat(){
-
-  if( this.y > height){
-    this.y = random(windowHeight, 0);
-    this.x = random(0, windowWidth);
-  }
-}
-
-
-
-//display
-display(){
-  fill(this.glitterColor);
-  ellipse(this.x, this.y, this.widthSize, this.heightSize);
-}
-
-//melt effect that didnt take
-    melt(){
-     if (this.y > height){
-        this.y = this.melt_y;
-        this.x = this.melt_x;
-      }
+    // new ball class object
+    let init_x = 5;
+    let init_y = 5;
+    for (let i = 0; i < numOfBalls; i++) {
+        balls.push(new Ball(init_x, init_y));
+        // move the starting position over
+        init_x += 100;
+        if (init_x > width) {
+            init_x = 50;
+            init_y += 120;
+        }
     }
 }
+//design canvas background, etc
+function draw() {
+    background('rgb(233, 177, 177)');
+
+    for (let i = 0; i < balls.length; i++) {
+        // call the ball's methods
+        balls[i].ballCheck(balls, i);
+        balls[i].edgeCheck();
+        balls[i].move();
+        balls[i].display();
+    }
+}
+
+
+
+
+
+
+///Ball Class///
+class Ball {
+    constructor(x, y, size) {
+        this.color = 'rgb(39, 204, 212)';
+        this.size = random(30, 150);
+        this.rad = this.size / 2;
+        this.posX = x;
+        this.posY = y;
+        this.deltaX = random(-10, 10);
+        this.deltaY = random(-10, 10);
+    }
+
+    display() {
+        push();
+        stroke(0);
+        // set the balls fill color
+        fill(this.color);
+        // set the position of the ball
+        translate(this.posX, this.posY);
+        ellipse(0, 0, this.size);
+        pop();
+    }
+//designate movement
+    move() {
+        this.posX += this.deltaX;
+        this.posY += this.deltaY;
+    }
+
+    edgeCheck() {
+        // check if the ball has hit a vertical, left or right wall
+        if (this.posX + this.rad >= width || this.posX - this.rad <= 0) {
+            this.deltaX *= -1;
+            this.color = 'rgb(222, 216, 42)';
+        }
+        // check if the ball has hit a horizontal, top of bottom wall
+        if (this.posY + this.rad >= height || this.posY - this.rad <= 0) {
+            this.deltaY *= -1;
+            this.color = 'rgb(222, 216, 42)';
+        }
+    }
+
+
+    ballCheck(otherBalls, myId) {
+        // for loop touches each of the balls in the array
+        for (let n = 0; n < otherBalls.length; n++) {
+            // if n != myId, then check for touching
+            // otherwise, its ME and should be skipped
+            if (n != myId) {
+                let d = dist(this.posX, this.posY, otherBalls[n].posX, otherBalls[n].posY);
+                let combinedR = this.rad + otherBalls[n].rad;
+
+                if (d <= combinedR) {
+                    this.deltaX *= -1;
+                    this.deltaY *= -1;
+
+                    // flip the color
+                    if( this.color == 'rgb(222, 216, 42)') {
+                        this.color = 'rgb(231, 16, 213)';
+                    } else {
+                        this.color = 'rgb(222, 216, 42)';
+                    }
+                }
+            }
+        }
+    }
+}
+//end of object interaction
