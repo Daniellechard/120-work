@@ -1,5 +1,13 @@
-# Empty p5 sketch.
+Danielle Chard [file:///C:/Users/Danielle%20Chard/Desktop/MART%20120-Creative%20Coding/120-work/hw-12/empty-example/index.html]
 
-Please replace contents of this file with appropriate readme information after finishing your p5 sketch.
+# **Summary**
 
-Current p5 version -> 0.7.1
+This week was about object interaction. This sketch is supposed to look kind of like two pizza slices that are getting pepperoni picked off of them as the red balls dissapear when they touch each other. It's a little abstract but I like the way it turned out.
+
+# **Steps and Issues**
+
+For this weeks sketch I just modified my old homework 11 sketch and made the confetti into pepperoni and changed the class name from Confetti to Ball. In order to complete this week's homework I had to go into the lab hours in order to get help from Emily but in the end we figured out how to make them interact with each other in a really neat way. I like that they dissapear instead of just bouncing off each other.
+
+# **Extra**
+
+I just hope I am able to finish my final project on time.

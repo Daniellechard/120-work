@@ -2,12 +2,12 @@ Danielle Chard
 
 # **Summary**
 
-This week was about object oriented programming. I kind of followed examples and created a simple confetti sketch that changes colors and falls to the ground.
+This week was about object interaction. This sketch is supposed to look kind of like two pizza slices that are getting pepperoni picked off of them as the red balls dissapear when they touch each other. It's a little abstract but I like the way it turned out.
 
 # **Steps and Issues**
 
-After reading through the material and trying to understand it the best I could I then went and watched the videos Shiffman makes on YouTube and while that gave me a better understanding I was still quite confused. I spent some time trying to figure it out on my own but then I just decided to try and get help on Thursday so I went to the lab hours and couldn't find anyone to help, even when I went to the lab hours on Tuesday. It turns out that apparently there is a second lab and when I went to lab 127 and it was locked it was because the TA's were in lab 126 so that kind of threw off my homework schedule. The mistakes I made this week were just a few simple syntax errors for the most part but they took me a while to find and fix even with the help of a TA.
+For this weeks sketch I just modified my old homework 11 sketch and made the confetti into pepperoni and changed the class name from Confetti to Ball. In order to complete this week's homework I had to go into the lab hours in order to get help from Emily but in the end we figured out how to make them interact with each other in a really neat way. I like that they dissapear instead of just bouncing off each other.
 
 # **Extra**
 
-I wish I had known about the other lab because now I feel very behind on the homework. I am very concerned about the final project and trying to catch up. I changed the direction of the confetti, how many pieces, and how fast they are going and am resubmitting this assignment for the second time.
+I just hope I am able to finish my final project on time.

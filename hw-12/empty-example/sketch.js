@@ -1,16 +1,16 @@
 let balls = [];
-let pieces = 200;
+let pieces = 100;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
 
-for (let i= 0; i < 200; i++) {
+for (let i= 0; i < 100; i++) {
   balls.push (new Ball());
  }
 }
 
 function draw(){
-  background(255);
+  background('rgb(255, 168, 28)');
   frameRate(30);
 
   for ( i = 0; i < balls.length; i++){
@@ -21,6 +21,10 @@ function draw(){
   //balls[i].move();
   balls[i].display();
 
+stroke(30);
+  line(0, 0, 1600, 850);
+  line(1600, 850, 900, 1600);
+
   }
 }
 
@@ -30,8 +34,8 @@ constructor(){
   //this.glitterColor= '( random(255), random(255), random(255))';
   this.x = random (0, windowWidth);
   this.y = random (windowHeight, 0);
-  this.widthSize = 40;
-  this.heightSize = 40;
+  this.widthSize = 75;
+  this.heightSize = 75;
   this.rad = this.widthSize/2;
 }
 
@@ -63,7 +67,7 @@ repeat(){
 display(){
   noStroke();
   //fill( random(255), random(255), random(255));
-  fill('rgb(145, 255, 248)');
+  fill('rgb(238, 21, 21)');
   ellipse(this.x, this.y, this.widthSize, this.heightSize);
 }
 
