@@ -92,17 +92,12 @@ ballCheck(otherBalls, myId) {
               let combinedR = this.rad + otherBalls[n].rad;
 
               if (d <= combinedR) {
-                  this.x *= -1;
+                this.x *= -1;
                   this.y *= -1;
+                }
 
-                  // flip the color
-                  if( this.color == 'rgb(145, 255, 248)') {
-                      this.color = 'rgb(142, 221, 21)';
-                  } else {
-                      this.color = 'rgb(145, 255, 248)';
-                  }
+
               }
           }
       }
   }
-}
