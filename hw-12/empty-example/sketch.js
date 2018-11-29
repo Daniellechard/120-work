@@ -1,10 +1,10 @@
 let balls = [];
-let pieces = 75;
+let pieces = 200;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
 
-for (let i= 0; i < 75; i++) {
+for (let i= 0; i < 200; i++) {
   balls.push (new Ball());
  }
 }
@@ -18,7 +18,6 @@ function draw(){
     let beginY= random(windowHeight, 0);
     balls[i].frame(beginX, beginY);
     balls[i].ballCheck(balls, i);
-  //  balls[i].edgeCheck();
   //balls[i].move();
   balls[i].display();
 
@@ -68,18 +67,20 @@ display(){
   ellipse(this.x, this.y, this.widthSize, this.heightSize);
 }
 
-edgeCheck() {
-       // check if the ball has hit a vertical wall (left or right walls)
-       if (this.x + this.rad >= width || this.x - this.rad <= 0) {
-           this.x *= -1;
-           this.color = 'rgb(255, 140, 34)';
-       }
-       // check if the ball has hit a horizontal wall (top or bottom walls)
-       if (this.y + this.rad >= height || this.y - this.rad <= 0) {
-           this.y *= -1;
-           this.color = 'rgb(255, 140, 34)';
-       }
-   }
+//edgeCheck() {
+        // check if the ball has hit a vertical wall (left or right walls)
+        //if (this.posX + this.rad >= width || this.posX - this.rad <= 0) {
+            //this.deltaX *= -1;
+            //this.color = 'rgb(110, 240, 158)';
+      //  }
+        // check if the ball has hit a horizontal wall (top or bottom walls)
+        //if (this.posY + this.rad >= height || this.posY - this.rad <= 0) {
+          //  this.deltaY *= -1;
+          //  this.color = 'rgb(110, 240, 158)';
+      //  }
+  //  }
+
+
 
 ballCheck(otherBalls, myId) {
       // for loop touches each of the balls in the array

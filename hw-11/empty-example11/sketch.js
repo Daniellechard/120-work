@@ -1,10 +1,10 @@
 let glitter = [];
-let pieces = 75;
+let pieces = 200;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
 
-for (let i= 0; i < 75; i++) {
+for (let i= 0; i < 200; i++) {
   glitter.push (new Confetti());
  }
 }
@@ -26,8 +26,8 @@ constructor(){
   //this.glitterColor= '( random(255), random(255), random(255))';
   this.x = random (0, windowWidth);
   this.y = random (windowHeight, 0);
-  this.widthSize = 10;
-  this.heightSize = 10;
+  this.widthSize = 35;
+  this.heightSize = 35;
 
 }
 
@@ -40,8 +40,12 @@ frame(){
 
 //movement
 glitter(){
-  this.x -= 0.1;
+  this.x -= 0.15;
   this.y += random (1, 5);
+
+  if(this.y < windowHeight) {
+    this.y += random (-5, -12)
+  }
 }
 
 repeat(){
