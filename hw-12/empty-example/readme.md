@@ -1,4 +1,4 @@
-Danielle Chard [file:///C:/Users/Danielle%20Chard/Desktop/MART%20120-Creative%20Coding/120-work/hw-12/empty-example/index.html]
+Danielle Chard [https://daniellechard.github.io/120-work/hw-12/empty-example/]
 
 # **Summary**
 
