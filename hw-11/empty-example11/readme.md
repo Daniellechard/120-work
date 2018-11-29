@@ -10,4 +10,4 @@ After reading through the material and trying to understand it the best I could 
 
 # **Extra**
 
-I wish I had known about the other lab because now I feel very behind on the homework. I am very concerned about the final project and trying to catch up.
+I wish I had known about the other lab because now I feel very behind on the homework. I am very concerned about the final project and trying to catch up. I changed the direction of the confetti, how many pieces, and how fast they are going and am resubmitting this assignment for the second time.

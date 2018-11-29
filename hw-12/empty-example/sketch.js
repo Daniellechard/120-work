@@ -67,21 +67,6 @@ display(){
   ellipse(this.x, this.y, this.widthSize, this.heightSize);
 }
 
-//edgeCheck() {
-        // check if the ball has hit a vertical wall (left or right walls)
-        //if (this.posX + this.rad >= width || this.posX - this.rad <= 0) {
-            //this.deltaX *= -1;
-            //this.color = 'rgb(110, 240, 158)';
-      //  }
-        // check if the ball has hit a horizontal wall (top or bottom walls)
-        //if (this.posY + this.rad >= height || this.posY - this.rad <= 0) {
-          //  this.deltaY *= -1;
-          //  this.color = 'rgb(110, 240, 158)';
-      //  }
-  //  }
-
-
-
 ballCheck(otherBalls, myId) {
       // for loop touches each of the balls in the array
       for (let n = 0; n < otherBalls.length; n++) {
