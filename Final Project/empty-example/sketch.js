@@ -1,4 +1,4 @@
-var song = "file name"
+var song = "Gasoline"
 
 
 
@@ -8,5 +8,9 @@ mySong = loadSound(song);
 
 function setup() {
   mySong.play();
-  
+
+}
+
+function draw() {
+  background(200);
 }
