@@ -18,7 +18,7 @@ function setup() {
   fft = new p5.FFT();
     createCanvas(windowWidth, windowHeight);
 //slowing frame rate
-frameRate(3);
+frameRate(2);
 }
 
 function draw() {
@@ -37,7 +37,7 @@ function draw() {
 
 //creating text to be able to see frequencies as song plays
   push();
-  
+
 text(bass, 10, 10,20,20);
 text(lowMid, 10, 20, 20, 20);
 text(mid, 10, 30, 20, 20);
@@ -47,5 +47,12 @@ text(treble, 10, 50, 20, 20);
   pop();
 
 //mapping frequencies
-  bass
+//first two numbers are the frequencies we are getting, second two are the values visuals need to be mapped to
+//dont forget to change second set
+  bass = map(bass, 0, 245, 0, 255);
+  lowMid = map(lowMid, 0, 210, 0, 255);
+  mid = map(mid, 0, 200, 0, 255);
+  highMid = map(highMid, 0, 140, 0, 255);
+  treble = map(treble, 0, 145, 0, 255);
+
 }
