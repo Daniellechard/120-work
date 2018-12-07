@@ -38,11 +38,11 @@ function draw() {
 //creating text to be able to see frequencies as song plays
   push();
 
-text(bass, 10, 10,20,20);
-text(lowMid, 10, 20, 20, 20);
-text(mid, 10, 30, 20, 20);
-text(highMid, 10, 40, 20, 20);
-text(treble, 10, 50, 20, 20);
+//text(bass, 10, 10,20,20);
+//text(lowMid, 10, 20, 20, 20);
+//text(mid, 10, 30, 20, 20);
+//text(highMid, 10, 40, 20, 20);
+//text(treble, 10, 50, 20, 20);
 
   pop();
 
@@ -55,28 +55,46 @@ text(treble, 10, 50, 20, 20);
   highMid = map(highMid, 0, 140, 0, 255);
   treble = map(treble, 0, 145, 0, 255);
 
+  pop();
+
+
+
 //circle
   push();
+  strokeWeight(5);
   stroke('rgb(252, 194, 219)');
   fill('rgb(90, 237, 210)');
   ellipse(800, 400, bass, bass) //drums
-  ellipse(300, 100, lowMid, lowMid); //voice?
-  ellipse(300, 600, mid, mid);
-  ellipse(1000, 100, highMid, highMid);
-  ellipse(1000, 600, treble, treble)
+  //ellipse(300, 100, lowMid, lowMid); //voice?
+  //ellipse(300, 600, mid, mid);
+  //ellipse(1000, 100, highMid, highMid);
+  //ellipse(1000, 600, treble, treble)
   pop();
 
+  //triangle
+  push();
+  strokeWeight(5);
+  //stroke('rgb(54, 36, 44)');
+  stroke('rgb(90, 237, 210)');
+  fill('rgb(167, 99, 130)')
+    triangle(500, 800, 900, treble, treble, 900);
+
+  pop();
 //line
 push();
 stroke('rgb(252, 194, 219)');
-strokeWeight(mid/10);
+strokeWeight(mid/8);
 line(800, mid, mid, mid);
-
 pop();
 
-//triangle
+//arc
 push();
-  
+strokeWeight(5);
+stroke('rgb(90, 237, 210)')
+fill('rgb(252, 194, 219)')
+arc(250, 200, highMid, highMid, 0, HALF_PI);
 
 pop();
+
+
 }
