@@ -57,18 +57,26 @@ text(treble, 10, 50, 20, 20);
 
 //circle
   push();
-
+  stroke('rgb(252, 194, 219)');
+  fill('rgb(90, 237, 210)');
   ellipse(800, 400, bass, bass) //drums
   ellipse(300, 100, lowMid, lowMid); //voice?
-  //ellipse(300, 600, mid, mid);
+  ellipse(300, 600, mid, mid);
   ellipse(1000, 100, highMid, highMid);
   ellipse(1000, 600, treble, treble)
   pop();
 
 //line
 push();
-strokeWeight(mid/2);
-line(800, mid, mid, mid );
+stroke('rgb(252, 194, 219)');
+strokeWeight(mid/10);
+line(800, mid, mid, mid);
+
+pop();
+
+//triangle
+push();
+  
 
 pop();
 }
