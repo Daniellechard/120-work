@@ -18,7 +18,7 @@ function setup() {
   fft = new p5.FFT();
     createCanvas(windowWidth, windowHeight);
 //slowing frame rate
-frameRate(2);
+frameRate(10);
 }
 
 function draw() {
@@ -55,4 +55,20 @@ text(treble, 10, 50, 20, 20);
   highMid = map(highMid, 0, 140, 0, 255);
   treble = map(treble, 0, 145, 0, 255);
 
+//circle
+  push();
+
+  ellipse(800, 400, bass, bass) //drums
+  ellipse(300, 100, lowMid, lowMid); //voice?
+  //ellipse(300, 600, mid, mid);
+  ellipse(1000, 100, highMid, highMid);
+  ellipse(1000, 600, treble, treble)
+  pop();
+
+//line
+push();
+strokeWeight(mid/2);
+line(800, mid, mid, mid );
+
+pop();
 }
