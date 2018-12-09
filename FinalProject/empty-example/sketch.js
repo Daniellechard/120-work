@@ -22,7 +22,7 @@ frameRate(10);
 }
 
 function draw() {
-  background(200);
+  background('rgb(54, 27, 38)');
   //analyzes frequencies and pulls them from data
   fft.analyze();
 
@@ -64,7 +64,12 @@ function draw() {
   strokeWeight(5);
   stroke('rgb(252, 194, 219)');
   fill('rgb(90, 237, 210)');
-  ellipse(800, 400, bass, bass) //drums
+  ellipse(800, 400, bass*1.4, bass*1.4) //drums
+  fill('rgb(167, 99, 130)')
+  noStroke();
+  ellipse(800, 400, bass*1.2, bass*1.2);
+  fill('rgb(21, 94, 101)')
+  ellipse(800, 400, bass,bass)
   //ellipse(300, 100, lowMid, lowMid); //voice?
   //ellipse(300, 600, mid, mid);
   //ellipse(1000, 100, highMid, highMid);
@@ -85,16 +90,23 @@ push();
 stroke('rgb(252, 194, 219)');
 strokeWeight(mid/8);
 line(800, mid, mid, mid);
+line(800, mid*2, mid*2, mid*2)
 pop();
 
 //arc
 push();
 strokeWeight(5);
-stroke('rgb(90, 237, 210)')
+stroke('rgb(21, 94, 101)')
 fill('rgb(252, 194, 219)')
-arc(250, 200, highMid, highMid, 0, HALF_PI);
+arc(950, 550, highMid, highMid, highMid/10, HALF_PI);
 
 pop();
+
+//quad
+strokeWeight(5);
+stroke('rgb(252, 194, 219)')
+fill('rgb(21, 94, 101)')
+quad(1000, 100, 1100, 0, 1200, 200, 1000, lowMid);
 
 
 }
