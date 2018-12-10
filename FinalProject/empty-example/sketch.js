@@ -1,10 +1,4 @@
-//var song = "\Users\Danielle Chard\Desktop\MART 120-Creative Coding\120-work\Final Project"
-//"Gasoline.mp3"
 
-//
-// function preload() {
-//  mySound = loadSound('assets/doorbell.mp3');
-// }
 let mySong;
 let fft;
 
@@ -64,16 +58,12 @@ function draw() {
   strokeWeight(5);
   stroke('rgb(252, 194, 219)');
   fill('rgb(90, 237, 210)');
-  ellipse(800, 400, bass*1.4, bass*1.4) //drums
-  fill('rgb(167, 99, 130)')
+  ellipse(800, 400, bass*1.4, bass*1.4);
+  fill('rgb(167, 99, 130)');
   noStroke();
   ellipse(800, 400, bass*1.2, bass*1.2);
-  fill('rgb(21, 94, 101)')
-  ellipse(800, 400, bass,bass)
-  //ellipse(300, 100, lowMid, lowMid); //voice?
-  //ellipse(300, 600, mid, mid);
-  //ellipse(1000, 100, highMid, highMid);
-  //ellipse(1000, 600, treble, treble)
+  fill('rgb(21, 94, 101)');
+  ellipse(800, 400, bass,bass);
   pop();
 
   //triangle
@@ -81,37 +71,34 @@ function draw() {
   strokeWeight(5);
   //stroke('rgb(54, 36, 44)');
   stroke('rgb(90, 237, 210)');
-  fill('rgb(167, 99, 130)')
-    triangle(500, 800, 900, treble, treble, 900);
-
+  fill('rgb(167, 99, 130)');
+  triangle(500, 800, 900, treble, treble, 900);
   pop();
+
 //line
 push();
-stroke('rgb(21, 94, 101)')
+stroke('rgb(21, 94, 101)');
 strokeWeight(mid/8);
 line(800, mid, mid, mid);
 stroke('rgb(252, 194, 219)');
-line(800, mid*2, mid*2, mid*2)
+line(800, mid*2, mid*2, mid*2);
 pop();
 
 //arc
 push();
 strokeWeight(15);
-stroke('rgb(90, 237, 210)')
-fill('rgb(252, 194, 219)')
+stroke('rgb(90, 237, 210)');
+fill('rgb(252, 194, 219)');
 arc(950, 550, highMid, highMid, highMid/10, HALF_PI);
-
 pop();
 
 //quad
 strokeWeight(5);
 stroke('rgb(90, 237, 210)')
-//noStroke();
-
-fill('rgb(21, 94, 101)')
+fill('rgb(21, 94, 101)');
 quad(1000, 100, 1100, 0, 1200, 200, 1000, lowMid*2);
-fill('rgb(252, 194, 219)')
-quad(1000, 100, 1100, 0, 1200, 200, 1000, lowMid)
+fill('rgb(252, 194, 219)');
+quad(1000, 100, 1100, 0, 1200, 200, 1000, lowMid);
 
 
 }
