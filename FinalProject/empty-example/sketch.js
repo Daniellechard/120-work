@@ -96,7 +96,7 @@ pop();
 
 //arc
 push();
-strokeWeight(5);
+strokeWeight(15);
 stroke('rgb(90, 237, 210)')
 fill('rgb(252, 194, 219)')
 arc(950, 550, highMid, highMid, highMid/10, HALF_PI);
