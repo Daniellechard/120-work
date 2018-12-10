@@ -87,16 +87,17 @@ function draw() {
   pop();
 //line
 push();
-stroke('rgb(252, 194, 219)');
+stroke('rgb(21, 94, 101)')
 strokeWeight(mid/8);
 line(800, mid, mid, mid);
+stroke('rgb(252, 194, 219)');
 line(800, mid*2, mid*2, mid*2)
 pop();
 
 //arc
 push();
 strokeWeight(5);
-stroke('rgb(21, 94, 101)')
+stroke('rgb(90, 237, 210)')
 fill('rgb(252, 194, 219)')
 arc(950, 550, highMid, highMid, highMid/10, HALF_PI);
 
@@ -104,9 +105,13 @@ pop();
 
 //quad
 strokeWeight(5);
-stroke('rgb(252, 194, 219)')
+stroke('rgb(90, 237, 210)')
+//noStroke();
+
 fill('rgb(21, 94, 101)')
-quad(1000, 100, 1100, 0, 1200, 200, 1000, lowMid);
+quad(1000, 100, 1100, 0, 1200, 200, 1000, lowMid*2);
+fill('rgb(252, 194, 219)')
+quad(1000, 100, 1100, 0, 1200, 200, 1000, lowMid)
 
 
 }
